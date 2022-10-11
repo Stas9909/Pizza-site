@@ -1,0 +1,863 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+    min-width: 350px;
+}
+
+.container {
+    width: 100%;
+
+    /* height: 800px; */
+}
+
+.grid div {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    grid-area: header;
+    height: 100vh;
+}
+
+.nav {
+    width: 100%;
+    /* height: 95px; */
+    height: 13%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+
+}
+
+.navLeft {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+.navLeftDiv {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.navLeftLogo {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 50%;
+    align-self: flex-end;
+    justify-self: end;
+}
+
+.navLeftPar1 {
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Josefin Sans';
+    color: white;
+}
+
+.navLeftPar2 {
+    margin: 0 0 0 -3px;
+    padding: 0;
+    width: 100%;
+    font-size: 12px;
+    text-align: end;
+    color: rgb(213, 182, 88);
+    letter-spacing: 2.3px;
+}
+
+.navLeftDiv p:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.navRight {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.navRightLink {
+    margin: 0;
+    width: 70px;
+    text-align: center;
+    font-size: 12px;
+    align-self: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(213, 182, 88);
+}
+
+
+
+
+
+.outer {
+    /* display: flex; */
+    width: 100%;
+    height: 87%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.wrapper {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    overflow: hidden;
+    /* transition: all linear 1s; */
+}
+
+
+
+
+
+.headerBackgroundA {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 6fr 1fr;
+    column-gap: 30px;
+}
+
+.headerBackground1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(Pizza-Layout/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute;
+    left: -100%; */
+}
+
+.innerheaderBackground3 {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+}
+
+.headerBackgroundA .innerheaderBackground3:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.innerheaderBackground1 {
+    display: grid;
+    justify-items: end;
+    position: relative;
+}
+
+.innerheaderBackground1Div {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 200px;
+}
+
+.h1,
+.h2,
+.h4 {
+    text-align: end;
+}
+
+.h1 {
+
+    color: white;
+    font-family: 'Josefin Sans';
+}
+
+.h2 {
+
+    color: rgb(213, 182, 88);
+    font-family: 'Nothing You Could Do';
+}
+
+.h4 {
+    color: white;
+}
+
+.innerheaderDivForBtn {
+    column-gap: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    justify-items: end;
+}
+
+.btn {
+    height: 45px;
+    width: 100px;
+    font-size: 12px;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgb(213, 182, 88);
+}
+
+.innerheaderBackground2 {
+    display: grid;
+    align-items: flex-end;
+}
+
+.headerBackgroundLogo {
+    width: 460px;
+    height: 460px;
+}
+
+.innerheaderBackground3 {
+    text-align: center;
+}
+
+.headerBackground .innerheaderBackground3:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.radio {
+    margin-top: 36px;
+    height: 18px;
+    width: 18px;
+}
+
+
+
+
+
+.headerBackgroundB {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 6fr 1fr;
+    column-gap: 30px;
+}
+
+.headerBackground2 {
+    width: 100%;
+    /* height: 659px; */
+    height: 100%;
+    background-image: url(Pizza-Layout/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute;
+    left: 0; */
+}
+
+.innerheaderBackground5 {
+    display: grid;
+    justify-items: start;
+    /* position: relative; */
+    align-items: center;
+}
+
+.innerheaderBackground1Div2 {
+    width: 500px;
+    height: 250px;
+    /* position: absolute; */
+    /* top: 200px; */
+}
+
+.h12,
+.h22,
+.h42 {
+    text-align: start;
+}
+
+.h12 {
+
+    color: white;
+    font-family: 'Josefin Sans';
+}
+
+.h22 {
+
+    color: rgb(213, 182, 88);
+    font-family: 'Nothing You Could Do';
+}
+
+.h42 {
+    color: white;
+}
+
+.innerheaderDivForBtn2 {
+    column-gap: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    justify-content: start;
+}
+
+.btn2 {
+    height: 45px;
+    width: 100px;
+    font-size: 12px;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+.btn2:hover {
+    background-color: rgb(213, 182, 88);
+}
+
+.innerheaderBackground6 {
+    display: grid;
+    align-items: end;
+    justify-items: end;
+}
+
+/* .headerBackgroundLogo{
+    width: 460px;
+    height: 460px;
+} */
+
+.headerBackgroundLogo {
+    width: 70%;
+    height: auto;
+    min-width: 340px;
+}
+
+.innerheaderBackground3 {
+    text-align: center;
+}
+
+.headerBackgroundB .innerheaderBackground3:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.radio {
+    margin-top: 36px;
+    height: 18px;
+    width: 18px;
+}
+
+
+
+
+
+
+
+.headerBackgroundC {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 6fr 1fr;
+    column-gap: 30px;
+}
+
+
+
+.headerBackground3 {
+    width: 100%;
+    /* height: 659px; */
+    height: 100%;
+    background-image: url(Pizza-Layout/bg_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute;
+    left: 100%; */
+}
+
+.innerheaderBackground7 {
+    display: grid;
+    justify-items: center;
+    position: relative;
+    background-color: rgba(5, 5, 5, 40%);
+}
+
+.innerheaderBackground3Div {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 200px;
+}
+
+.h13,
+.h23,
+.h43 {
+    text-align: center;
+}
+
+.h13 {
+    line-height: 50px;
+    color: white;
+    font-family: 'Josefin Sans';
+}
+
+.h23 {
+
+    color: rgb(213, 182, 88);
+    font-family: 'Nothing You Could Do';
+}
+
+.h43 {
+    color: white;
+}
+
+.innerheaderDivForBtn3 {
+    column-gap: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+#innerheaderBtn5 {
+    justify-self: end;
+}
+
+#innerheaderBtn6 {
+    justify-self: start;
+}
+
+.btn {
+    height: 45px;
+    width: 100px;
+    font-size: 12px;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgb(213, 182, 88);
+}
+
+.innerheaderBackground8 {
+    background-color: rgba(5, 5, 5, 40%);
+    text-align: center;
+}
+
+.headerBackgroundC .innerheaderBackground8:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.radio {
+    margin-top: 36px;
+    height: 18px;
+    width: 18px;
+}
+
+@media (max-width: 1000px) {
+    .headerBackgroundB {
+        column-gap: 0px;
+        overflow: hidden;
+    }
+
+    .headerBackgroundC {
+        column-gap: 0px;
+        overflow: hidden;
+    }
+
+    .innerheaderBackground1Div2 {
+        width: 500px;
+        height: 250px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 540px) {
+    .h13 {
+        display: none;
+    }
+
+    .h43 {
+        font-size: 10px;
+    }
+
+    .headerBackgroundC {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.article {
+    background-image: url(Pizza-Layout/bg_4.jpg);
+    grid-area: article;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 2fr 2fr 16fr;
+}
+
+.articleCaptionH1 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.articleDecoration {
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr 1fr 8fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+}
+
+.articleHr {
+    margin: 0;
+}
+
+hr{
+    border: none;
+    background-color:  rgb(88, 63, 6);
+    height: 1px;
+    margin-top: 33px;
+}
+
+.innerArticleDecoration {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.smallOrnament{
+    height: 7px;
+    width: 7px;
+    background-color: rgb(213, 182, 88);
+    transform: rotate(45deg);
+}
+
+.bigOrnament{
+    height: 12px;
+    width: 12px;
+    background-color: rgb(213, 182, 88);
+    transform: rotate(45deg);
+}
+
+.articleParagrahp{
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+}
+
+.articleMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inArticleMenu{
+    height: 65%;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 6fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.inArticleMenuImg{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 60px;
+    width: 60px;
+}
+
+.articleMenuImg{
+    width: 100%;
+}
+
+#pizza2{
+    margin: -1px 0 0 1px;
+    scale: 1.07;
+}
+
+#pizza3{
+    scale: 1.1;
+}
+
+#pizza4{
+    margin: 10.5px 0 0 -3px;
+    scale: 1.65;
+}
+
+#pizza5{
+    margin: 10px 0 0 -1px;
+    scale: 1.6;
+}
+
+#pizza6{
+    margin-top: 2.5px;
+    scale: 1.1;
+}
+
+#pizza7{
+    margin-left: 1px;
+    scale: 1.1;
+}
+
+#pizza8{
+    margin-top: 1px;
+    scale: 1.25;
+}
+
+.inArticleMenuContent{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    height: 70px;
+}
+
+.inArticleMenuContentPar1, 
+.inArticleMenuContentPar2,
+.inArticleMenuContentPar3{
+    margin: 0;
+}
+
+.inArticleMenuContentPar1{
+    height: 17px;
+    font-size: 17px;
+    font-family: 'Josefin Sans';
+    color: white;
+    border-bottom: 1.5px dotted rgb(213, 182, 88);
+}
+
+.inArticleMenuContentPar2{
+    font-size: 14px;
+    color: rgb(213, 182, 88);
+    font-weight: bold;
+}
+
+.inArticleMenuContentPar3{
+    font-size: 12px;
+    line-height: 10px;
+    color: gray;
+}
+
+.inArticleMenuContent .inArticleMenuContentPar3:nth-child(3){
+    grid-column: 1/3;
+}
+
+@media (max-width: 740px) {
+    .inArticleMenuContentPar1{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 650px) {
+    .inArticleMenuContentPar1{
+        border: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 3fr 4fr 5fr 3fr 3fr 3fr;
+    grid-template-rows: 2fr 6fr 2fr 3fr;
+}
+
+.footerh3 {
+    color: white;
+}
+
+.footer .innerFooter1:nth-child(1) {
+    grid-column: 1/7;
+}
+
+.footer .innerFooter2:nth-child(2) {
+    grid-row: 2/4;
+}
+
+.innerFooter3H4 {
+    color: white;
+}
+
+.innerFooter4Div {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    width: 85%;
+}
+
+/* .innerFooter4ImgDiv{
+
+} */
+
+.innerFooter4Img {
+    width: 65px;
+    height: 70px;
+}
+
+.innerFooter4Div .innerFooter4ImgDiv:nth-child(1) {
+    grid-row: 1/3;
+}
+
+.innerFooter4H4 {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: -4px;
+    color: white;
+}
+
+
+.insideInnerFooter4Img {
+    width: 10px;
+    height: 10px;
+}
+
+.insideInnerFooter4Par {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    color: gray;
+}
+
+.insideInnerFooter4Div {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1;
+    align-items: center;
+    justify-items: start;
+}
+
+.innerFooter5H4 {
+    margin-top: -5px;
+    color: white;
+}
+
+.innerFooter6Div {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.innerFooter6DivImg {
+    width: 15px;
+    height: 15px;
+}
+
+.innerFooter6DivH4 {
+    margin-top: -5px;
+    color: white;
+}
+
+.innerFooter8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 21fr;
+    grid-template-rows: 1;
+}
+
+.footer .innerFooter8:nth-child(8) {
+    grid-column: 2/7;
+}
+
+.innerFooter8Img {
+    width: 25px;
+    height: 25px;
+    border: 10px solid rgba(128, 128, 128, 20%);
+    border-radius: 50%;
+    /* color: gray; */
+}
+
+.footer .innerFooter9:nth-child(9) {
+    grid-column: 1/7;
+}
+
+.innerFooter9H4 {
+    color: gray;
+    text-align: center;
+}
+
+@media (max-width: 980px) {
+    .innerFooter4H4 {
+        font-size: 10px;
+    }
+
+    .insideInnerFooter4Par {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .footerh3,
+    .innerFooter3H4,
+    .innerFooter5H4,
+    .innerFooter6DivH4 {
+        font-size: 12px;
+    }
+
+    .insideInnerFooter4Div {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .innerFooter4H4 {
+        display: none;
+    }
+
+}
