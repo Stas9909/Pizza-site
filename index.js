@@ -6,9 +6,9 @@ window.onload = function(){
 
     setInterval(slide, 5000)
     function slide(){
-        for (let radio of document.querySelectorAll('[type="radio"]')) {
-            radio.checked = false;
-          }   
+        // for (let radio of document.querySelectorAll('[type="radio"]')) {
+        //     radio.checked = false;
+        //   }   
 
         wrapper.style.left = `${counter*-100}%`;
         counter >= 2 ? counter = 0 : counter++ ? wrapper.style.transition="all linear 1s" : wrapper.style.transition="all linear 0.3s"
@@ -23,7 +23,6 @@ window.onload = function(){
                 counter = 0;
                 wrapper.style.left = `${counter*-100}%`
                 wrapper.style.transition="all linear 1s"
-                
             }
             if (e.target.id === 'radioBtn2') {
                 counter = 1;
@@ -37,6 +36,21 @@ window.onload = function(){
             }
         // }
     }
+
+    // radioBtn1
+    
+    // for (let radio of document.querySelectorAll('[type="radio"]')) {
+    //     console.log(radio)
+    //     if(document.querySelector(".headerBackgroundA")){
+    //         radio.checked = true;
+    //     }    
+    //     if(document.querySelector(".headerBackgroundB")){
+    //         radio.checked = true;
+    //     }  
+    //     if(document.querySelector(".headerBackgroundC")){
+    //         radio.checked = true;
+    //     }  
+    // }
 }
 
 
