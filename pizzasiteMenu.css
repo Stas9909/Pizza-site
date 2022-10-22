@@ -12,8 +12,6 @@ body {
 
 .container {
     width: 100%;
-
-    /* height: 800px; */
 }
 
 .grid div {
@@ -28,12 +26,10 @@ body {
 
 .nav {
     width: 100%;
-    /* height: 95px; */
     height: 13%;
     background-color: black;
     display: grid;
     grid-template-columns: 4fr 6fr;
-
 }
 
 .navLeft {
@@ -108,18 +104,12 @@ a:hover {
     color: rgb(213, 182, 88);
 }
 
-
-
-
-
 .outer {
-    /* display: flex; */
     width: 100%;
     height: 87%;
     overflow: hidden;
     position: relative;
 }
-
 
 .wrapper {
     display: flex;
@@ -128,12 +118,7 @@ a:hover {
     position: relative;
     left: 0;
     overflow: hidden;
-    /* transition: all linear 1s; */
 }
-
-
-
-
 
 .headerBackgroundA {
     display: grid;
@@ -148,8 +133,6 @@ a:hover {
     background-image: url(Pizza-Layout/bg_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: absolute;
-    left: -100%; */
 }
 
 .innerheaderBackground3 {
@@ -245,10 +228,6 @@ a:hover {
     width: 18px;
 }
 
-
-
-
-
 .headerBackgroundB {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -258,27 +237,21 @@ a:hover {
 
 .headerBackground2 {
     width: 100%;
-    /* height: 659px; */
     height: 100%;
     background-image: url(Pizza-Layout/bg_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: absolute;
-    left: 0; */
 }
 
 .innerheaderBackground5 {
     display: grid;
     justify-items: start;
-    /* position: relative; */
     align-items: center;
 }
 
 .innerheaderBackground1Div2 {
     width: 500px;
     height: 250px;
-    /* position: absolute; */
-    /* top: 200px; */
 }
 
 .h12,
@@ -331,11 +304,6 @@ a:hover {
     justify-items: end;
 }
 
-/* .headerBackgroundLogo{
-    width: 460px;
-    height: 460px;
-} */
-
 .headerBackgroundLogo {
     width: 70%;
     height: auto;
@@ -357,12 +325,6 @@ a:hover {
     width: 18px;
 }
 
-
-
-
-
-
-
 .headerBackgroundC {
     display: grid;
     grid-template-columns: repeat(1fr);
@@ -370,17 +332,12 @@ a:hover {
     column-gap: 30px;
 }
 
-
-
 .headerBackground3 {
     width: 100%;
-    /* height: 659px; */
     height: 100%;
     background-image: url(Pizza-Layout/bg_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: absolute;
-    left: 100%; */
 }
 
 .innerheaderBackground7 {
@@ -497,21 +454,6 @@ a:hover {
         overflow: hidden;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .article {
     background-image: url(Pizza-Layout/bg_4.jpg);
@@ -685,23 +627,6 @@ hr{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
     grid-area: footer;
     background-color: black;
@@ -733,10 +658,6 @@ hr{
     width: 85%;
 }
 
-/* .innerFooter4ImgDiv{
-
-} */
-
 .innerFooter4Img {
     width: 65px;
     height: 70px;
@@ -757,7 +678,6 @@ hr{
     margin-top: -4px;
     color: white;
 }
-
 
 .insideInnerFooter4Img {
     width: 10px;
@@ -819,7 +739,6 @@ hr{
     height: 25px;
     border: 10px solid rgba(128, 128, 128, 20%);
     border-radius: 50%;
-    /* color: gray; */
 }
 
 .footer .innerFooter9:nth-child(9) {
@@ -859,5 +778,4 @@ hr{
     .innerFooter4H4 {
         display: none;
     }
-
 }
